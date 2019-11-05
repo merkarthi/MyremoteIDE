@@ -1,11 +1,11 @@
-class Person:
-    def __init__(self,name,age):
+class Collegestudent:
+    stream="cse"
+    def __init__(self,name):
         self.name=name
-        self.age=age
-
-    def say_hi(merk):
-        print("My name is ",merk.name,"\nI'm ",merk.age,"year old")
-
-p=Person("karthi",15)
-p.say_hi()
-
+    def getaddress(self,address):
+        self.address=address
+    def postaddress(self):
+        return self.address
+a=Collegestudent("karthi")
+a.getaddress("kadapakkam")
+print(a.postaddress())
